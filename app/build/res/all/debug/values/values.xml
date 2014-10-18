@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- From: file:/Users/gabriellamer/git/CovoiturageMobile1/app/src/main/res/values/dimens.xml -->
+    <eat-comment />
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- From: file:/Users/gabriellamer/git/CovoiturageMobile1/app/src/main/res/values/strings.xml -->
+    <eat-comment />
+
+    <string name="action_add">Add</string>
+    <string name="action_ads">Mes annonces</string>
+    <string name="action_delete">Supprimer</string>
+    <string name="action_edit">edit</string>
+    <!-- From: file:/Users/gabriellamer/git/CovoiturageMobile1/app/src/main/res/values/strings_activity_login.xml -->
+    <eat-comment />
+
+    <string name="action_forgot_password">Recover lost password</string>
+    <!-- From: file:/Users/gabriellamer/git/CovoiturageMobile1/app/src/main/res/values/strings.xml -->
+    <eat-comment />
+
+    <string name="action_profile">Mon profil</string>
+    <string name="action_save">Sauvegarder</string>
+    <string name="action_settings">Settings</string>
+    <!-- From: file:/Users/gabriellamer/git/CovoiturageMobile1/app/src/main/res/values/strings_activity_login.xml -->
+    <eat-comment />
+
+    <string name="action_sign_in_register"><b>Sign in</b> or register</string>
+    <string name="action_sign_in_short">Se connecter</string>
+    <!-- From: file:/Users/gabriellamer/git/CovoiturageMobile1/app/src/main/res/values/strings_activity_manage_user.xml -->
+    <eat-comment />
+
+    <string name="age">Âge</string>
+    <!-- From: file:/Users/gabriellamer/git/CovoiturageMobile1/app/src/main/res/values/strings.xml -->
+    <eat-comment />
+
+    <string name="air_conditionner">Air climatisé</string>
+    <string name="app_name">Covoiturage Mobile</string>
+    <!-- From: file:/Users/gabriellamer/git/CovoiturageMobile1/app/src/main/res/values/strings_activity_manage_user.xml -->
+    <eat-comment />
+
+    <string name="app_number">No. app</string>
+    <string name="city">Ville</string>
+    <string name="delete_user">Supprimer</string>
+    <!-- From: file:/Users/gabriellamer/git/CovoiturageMobile1/app/src/main/res/values/strings.xml -->
+    <eat-comment />
+
+    <string name="description">Description</string>
+    <string name="driver">Conducteur</string>
+    <!-- From: file:/Users/gabriellamer/git/CovoiturageMobile1/app/src/main/res/values/strings_activity_manage_user.xml -->
+    <eat-comment />
+
+    <string name="email">Courriel</string>
+    <!-- From: file:/Users/gabriellamer/git/CovoiturageMobile1/app/src/main/res/values/strings_activity_login.xml -->
+    <eat-comment />
+
+    <string name="error_field_required">This field is required</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <!-- From: file:/Users/gabriellamer/git/CovoiturageMobile1/app/src/main/res/values/strings.xml -->
+    <eat-comment />
+
+    <string name="heater">Chauffage</string>
+    <string name="hello_world">Hello world!</string>
+    <!-- From: file:/Users/gabriellamer/git/CovoiturageMobile1/app/src/main/res/values/strings_activity_manage_user.xml -->
+    <eat-comment />
+
+    <string name="lastname">Nom</string>
+    <!-- From: file:/Users/gabriellamer/git/CovoiturageMobile1/app/src/main/res/values/strings_activity_login.xml -->
+    <eat-comment />
+
+    <string name="login_progress_signing_in">Signing in…</string>
+    <!-- From: file:/Users/gabriellamer/git/CovoiturageMobile1/app/src/main/res/values/strings_activity_manage_user.xml -->
+    <eat-comment />
+
+    <string name="man">Homme</string>
+    <string name="name">Prénom</string>
+    <!-- From: file:/Users/gabriellamer/git/CovoiturageMobile1/app/src/main/res/values/strings.xml -->
+    <eat-comment />
+
+    <string name="nb_seats">Nombre de places</string>
+    <!-- From: file:/Users/gabriellamer/git/CovoiturageMobile1/app/src/main/res/values/strings_activity_search.xml -->
+    <eat-comment />
+
+    <string name="passenger">Passager</string>
+    <!-- From: file:/Users/gabriellamer/git/CovoiturageMobile1/app/src/main/res/values/strings_activity_manage_user.xml -->
+    <eat-comment />
+
+    <string name="phone">Téléphone</string>
+    <string name="postal_code">Code postal</string>
+    <!-- From: file:/Users/gabriellamer/git/CovoiturageMobile1/app/src/main/res/values/strings_activity_login.xml -->
+    <eat-comment />
+
+    <string name="prompt_password">Mot de passe</string>
+    <string name="prompt_username">Nom d\'utilisateur</string>
+    <!-- From: file:/Users/gabriellamer/git/CovoiturageMobile1/app/src/main/res/values/strings_activity_manage_user.xml -->
+    <eat-comment />
+
+    <string name="province">Province</string>
+    <!-- From: file:/Users/gabriellamer/git/CovoiturageMobile1/app/src/main/res/values/strings_activity_search.xml -->
+    <eat-comment />
+
+    <string name="range">Distance</string>
+    <!-- From: file:/Users/gabriellamer/git/CovoiturageMobile1/app/src/main/res/values/strings_activity_manage_user.xml -->
+    <eat-comment />
+
+    <string name="save_user">Sauvegarder</string>
+    <!-- From: file:/Users/gabriellamer/git/CovoiturageMobile1/app/src/main/res/values/strings.xml -->
+    <eat-comment />
+
+    <string name="search_search">Rechercher</string>
+    <!-- From: file:/Users/gabriellamer/git/CovoiturageMobile1/app/src/main/res/values/strings_activity_manage_user.xml -->
+    <eat-comment />
+
+    <string name="sex">Sexe</string>
+    <string name="street_name">Nom de rue</string>
+    <string name="street_number">No. Civique</string>
+    <!-- From: file:/Users/gabriellamer/git/CovoiturageMobile1/app/src/main/res/values/strings.xml -->
+    <eat-comment />
+
+    <string name="title">Titre</string>
+    <string name="title_activity_add_ads">Mes annonces</string>
+    <!-- From: file:/Users/gabriellamer/git/CovoiturageMobile1/app/src/main/res/values/strings_activity_login.xml -->
+    <eat-comment />
+
+    <string name="title_activity_login">Sign in</string>
+    <!-- From: file:/Users/gabriellamer/git/CovoiturageMobile1/app/src/main/res/values/strings.xml -->
+    <eat-comment />
+
+    <string name="title_activity_manage_user">Mon profil</string>
+    <string name="title_activity_search">Recherche d\'annonce</string>
+    <string name="title_activity_search_ads">SearchAds</string>
+    <string name="title_activity_user">User</string>
+    <!-- From: file:/Users/gabriellamer/git/CovoiturageMobile1/app/src/main/res/values/strings_activity_manage_user.xml -->
+    <eat-comment />
+
+    <string name="woman">Femme</string>
+    <string name="year">ans</string>
+    <!-- From: file:/Users/gabriellamer/git/CovoiturageMobile1/app/src/main/res/values/styles.xml -->
+    <eat-comment />
+
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="LoginFormContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">16dp</item>
+    </style>
+
+</resources>

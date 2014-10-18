@@ -1,0 +1,109 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:background="#4B4B4B"
+    android:showDividers="none"
+    tools:context=".ManageAds" >
+
+    <EditText
+        android:id="@+id/etTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/title"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#55CB6A" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/etNbPlace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="@string/nb_seats"
+        android:inputType="number"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF" />
+
+    <CheckBox
+        android:id="@+id/cbxDriver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/driver"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF" />
+
+    <CheckBox
+        android:id="@+id/cbxAirConditionner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/air_conditionner"
+        android:textColor="#FFFFFF" />
+
+    <CheckBox
+        android:id="@+id/cbxHeater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/heater"
+        android:textColor="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/etDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/description"
+        android:inputType="textMultiLine"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:showDividers="middle" >
+
+            <Button
+                android:id="@+id/btnDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="#55CB6A"
+                android:height="40dp"
+                android:minHeight="35dp"
+                android:text="@string/action_delete"
+                android:visibility="invisible"
+                android:width="115dp" />
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#55CB6A"
+                android:height="40dp"
+                android:minHeight="35dp"
+                android:text="@string/action_save"
+                android:width="115dp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
+<!-- From: file:/Users/gabriellamer/Git/CovoiturageMobile1/app/src/main/res/layout/activity_manage_ads.xml -->

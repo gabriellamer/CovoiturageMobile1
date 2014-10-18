@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4B4B4B">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="title"
+            android:id="@+id/tvTitle"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="description"
+            android:id="@+id/tvDescription"
+            android:layout_below="@+id/tvTitle"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="50dp"
+            android:textColor="#FFFFFF" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chauffage"
+            android:id="@+id/cbHeater"
+            android:textColor="#FFFFFF"
+            android:layout_alignStart="@+id/tvDescription"
+            android:layout_below="@+id/cbAirConditionner"
+            android:checked="false"
+            android:clickable="false" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Air climatisé"
+            android:id="@+id/cbAirConditionner"
+            android:layout_alignStart="@+id/cbHeater"
+            android:textColor="#FFFFFF"
+            android:layout_below="@+id/cbDriver"
+            android:checked="false"
+            android:clickable="false" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Conducteur"
+            android:id="@+id/cbDriver"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="100dp"
+            android:layout_below="@+id/tvDescription"
+            android:layout_alignLeft="@+id/cbHeater"
+            android:layout_alignStart="@+id/cbHeater"
+            android:checked="false"
+            android:clickable="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre de places :"
+            android:id="@+id/textView3"
+            android:layout_below="@+id/tvDescription"
+            android:layout_alignLeft="@+id/cbDriver"
+            android:layout_alignStart="@+id/cbDriver"
+            android:layout_marginTop="35dp"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:id="@+id/tvNbPlace"
+            android:textColor="#FFFFFF"
+            android:layout_toEndOf="@+id/cbDriver"
+            android:layout_alignTop="@+id/textView3"
+            android:layout_toRightOf="@+id/cbDriver"
+            android:layout_marginLeft="20dp" />
+
+    </RelativeLayout>
+
+</LinearLayout><!-- From: file:/Users/gabriellamer/Git/CovoiturageMobile1/app/src/main/res/layout/activity_ads.xml -->

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="name">Prénom</string>
+    <string name="lastname">Nom</string>
+    <string name="phone">Téléphone</string>
+    <string name="email">Courriel</string>
+    <string name="sex">Sexe</string>
+    <string name="age">Âge</string>
+    <string name="man">Homme</string>
+    <string name="woman">Femme</string>
+    <string name="street_number">No. Civique</string>
+    <string name="street_name">Nom de rue</string>
+    <string name="city">Ville</string>
+    <string name="province">Province</string>
+    <string name="postal_code">Code postal</string>
+    <string name="save_user">Sauvegarder</string>
+    <string name="delete_user">Supprimer</string>
+    <string name="year">ans</string>
+    <string name="app_number">No. app</string>
+    
+</resources>
