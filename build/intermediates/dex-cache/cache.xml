@@ -2,10 +2,28 @@
 <pre-dex-items>
 
     <item
-        dex="/Users/gabriellamer/Git/CovoiturageMobile1/app/build/intermediates/pre-dexed/debug/support-v4-19.1.0-fe930dc68beb1e566675ce71b270d4091c6c249b.jar"
-        jar="/Applications/Android Studio.app/sdk/extras/android/m2repository/com/android/support/support-v4/19.1.0/support-v4-19.1.0.jar"
+        dex="/Users/gabriellamer/Git/CovoiturageMobile1/app/build/intermediates/pre-dexed/debug/classes-c65546b92b2adcc81aca9e93eb55452fb66e897b.jar"
+        jar="/Users/gabriellamer/Git/CovoiturageMobile1/app/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/classes.jar"
         jumboMode="false"
         revision="19.1.0"
-        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67"/>
+        sha1="8694693636ab36910c8100ce527c258ff3ebece0"/>
+    <item
+        dex="/Users/gabriellamer/Git/CovoiturageMobile1/app/build/intermediates/pre-dexed/debug/classes-a57316d1060249532fcbcf1171ddb4b90d15cf03.jar"
+        jar="/Users/gabriellamer/Git/CovoiturageMobile1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.1.71/classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="0f6d5c1ef2e982c3b7858408e3df389cf5d202da"/>
+    <item
+        dex="/Users/gabriellamer/Git/CovoiturageMobile1/app/build/intermediates/pre-dexed/debug/support-annotations-20.0.0-83163fed7c484aef1bfc8a2a50525e1a06d50590.jar"
+        jar="/Users/gabriellamer/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/20.0.0/support-annotations-20.0.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="9d9013e9ff35fc3756411e62873c363c70c638fa"/>
+    <item
+        dex="/Users/gabriellamer/Git/CovoiturageMobile1/app/build/intermediates/pre-dexed/debug/internal_impl-20.0.0-717ed52c2dc5c7eb33f6315ee46fb4475019cf58.jar"
+        jar="/Users/gabriellamer/Git/CovoiturageMobile1/app/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/libs/internal_impl-20.0.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d"/>
 
 </pre-dex-items>

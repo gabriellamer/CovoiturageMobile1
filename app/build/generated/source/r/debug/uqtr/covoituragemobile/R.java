@@ -8,82 +8,457 @@
 package uqtr.covoituragemobile;
 
 public final class R {
+    public static final class anim {
+        public static final int manage_ads_slide_in=0x7f040000;
+        public static final int manage_ads_slide_out=0x7f040001;
+        public static final int user_ads_slide_in=0x7f040002;
+        public static final int user_ads_slide_out=0x7f040003;
+    }
     public static final class attr {
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int adSize=0x7f010000;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int adSizes=0x7f010001;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int adUnitId=0x7f010002;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>holo_dark</code></td><td>0</td><td></td></tr>
+<tr><td><code>holo_light</code></td><td>1</td><td></td></tr>
+</table>
+         */
+        public static final int appTheme=0x7f010011;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>classic</code></td><td>1</td><td></td></tr>
+<tr><td><code>grayscale</code></td><td>2</td><td></td></tr>
+<tr><td><code>monochrome</code></td><td>3</td><td></td></tr>
+</table>
+         */
+        public static final int buyButtonAppearance=0x7f010018;
+        /** <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+<p>May be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>match_parent</code></td><td>-1</td><td></td></tr>
+<tr><td><code>wrap_content</code></td><td>-2</td><td></td></tr>
+</table>
+         */
+        public static final int buyButtonHeight=0x7f010015;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>buy_with_google</code></td><td>1</td><td></td></tr>
+<tr><td><code>buy_now</code></td><td>2</td><td></td></tr>
+<tr><td><code>book_now</code></td><td>3</td><td></td></tr>
+</table>
+         */
+        public static final int buyButtonText=0x7f010017;
+        /** <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+<p>May be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>match_parent</code></td><td>-1</td><td></td></tr>
+<tr><td><code>wrap_content</code></td><td>-2</td><td></td></tr>
+</table>
+         */
+        public static final int buyButtonWidth=0x7f010016;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int cameraBearing=0x7f010004;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int cameraTargetLat=0x7f010005;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int cameraTargetLng=0x7f010006;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int cameraTilt=0x7f010007;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int cameraZoom=0x7f010008;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>production</code></td><td>1</td><td></td></tr>
+<tr><td><code>sandbox</code></td><td>0</td><td></td></tr>
+<tr><td><code>strict_sandbox</code></td><td>2</td><td></td></tr>
+</table>
+         */
+        public static final int environment=0x7f010012;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>buyButton</code></td><td>1</td><td></td></tr>
+<tr><td><code>selectionDetails</code></td><td>2</td><td></td></tr>
+</table>
+         */
+        public static final int fragmentMode=0x7f010014;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int fragmentStyle=0x7f010013;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>none</code></td><td>0</td><td></td></tr>
+<tr><td><code>normal</code></td><td>1</td><td></td></tr>
+<tr><td><code>satellite</code></td><td>2</td><td></td></tr>
+<tr><td><code>terrain</code></td><td>3</td><td></td></tr>
+<tr><td><code>hybrid</code></td><td>4</td><td></td></tr>
+</table>
+         */
+        public static final int mapType=0x7f010003;
+        /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+         */
+        public static final int maskedWalletDetailsBackground=0x7f01001b;
+        /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+         */
+        public static final int maskedWalletDetailsButtonBackground=0x7f01001d;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int maskedWalletDetailsButtonTextAppearance=0x7f01001c;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int maskedWalletDetailsHeaderTextAppearance=0x7f01001a;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>classic</code></td><td>1</td><td></td></tr>
+<tr><td><code>monochrome</code></td><td>2</td><td></td></tr>
+</table>
+         */
+        public static final int maskedWalletDetailsLogoImageType=0x7f01001f;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int maskedWalletDetailsLogoTextColor=0x7f01001e;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int maskedWalletDetailsTextAppearance=0x7f010019;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int uiCompass=0x7f010009;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int uiRotateGestures=0x7f01000a;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int uiScrollGestures=0x7f01000b;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int uiTiltGestures=0x7f01000c;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int uiZoomControls=0x7f01000d;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int uiZoomGestures=0x7f01000e;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int useViewLifecycle=0x7f01000f;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int zOrderOnTop=0x7f010010;
+    }
+    public static final class color {
+        public static final int common_action_bar_splitter=0x7f050000;
+        public static final int common_signin_btn_dark_text_default=0x7f050001;
+        public static final int common_signin_btn_dark_text_disabled=0x7f050002;
+        public static final int common_signin_btn_dark_text_focused=0x7f050003;
+        public static final int common_signin_btn_dark_text_pressed=0x7f050004;
+        public static final int common_signin_btn_default_background=0x7f050005;
+        public static final int common_signin_btn_light_text_default=0x7f050006;
+        public static final int common_signin_btn_light_text_disabled=0x7f050007;
+        public static final int common_signin_btn_light_text_focused=0x7f050008;
+        public static final int common_signin_btn_light_text_pressed=0x7f050009;
+        public static final int common_signin_btn_text_dark=0x7f050017;
+        public static final int common_signin_btn_text_light=0x7f050018;
+        public static final int wallet_bright_foreground_disabled_holo_light=0x7f05000a;
+        public static final int wallet_bright_foreground_holo_dark=0x7f05000b;
+        public static final int wallet_bright_foreground_holo_light=0x7f05000c;
+        public static final int wallet_dim_foreground_disabled_holo_dark=0x7f05000d;
+        public static final int wallet_dim_foreground_holo_dark=0x7f05000e;
+        public static final int wallet_dim_foreground_inverse_disabled_holo_dark=0x7f05000f;
+        public static final int wallet_dim_foreground_inverse_holo_dark=0x7f050010;
+        public static final int wallet_highlighted_text_holo_dark=0x7f050011;
+        public static final int wallet_highlighted_text_holo_light=0x7f050012;
+        public static final int wallet_hint_foreground_holo_dark=0x7f050013;
+        public static final int wallet_hint_foreground_holo_light=0x7f050014;
+        public static final int wallet_holo_blue_light=0x7f050015;
+        public static final int wallet_link_text_light=0x7f050016;
+        public static final int wallet_primary_text_holo_light=0x7f050019;
+        public static final int wallet_secondary_text_holo_dark=0x7f05001a;
     }
     public static final class dimen {
-        public static final int activity_horizontal_margin=0x7f040000;
-        public static final int activity_vertical_margin=0x7f040001;
+        public static final int activity_horizontal_margin=0x7f070000;
+        public static final int activity_vertical_margin=0x7f070001;
     }
     public static final class drawable {
-        public static final int add_contact=0x7f020000;
-        public static final int ic_action_add_person=0x7f020001;
-        public static final int ic_launcher=0x7f020002;
+        public static final int common_full_open_on_phone=0x7f020000;
+        public static final int common_ic_googleplayservices=0x7f020001;
+        public static final int common_signin_btn_icon_dark=0x7f020002;
+        public static final int common_signin_btn_icon_disabled_dark=0x7f020003;
+        public static final int common_signin_btn_icon_disabled_focus_dark=0x7f020004;
+        public static final int common_signin_btn_icon_disabled_focus_light=0x7f020005;
+        public static final int common_signin_btn_icon_disabled_light=0x7f020006;
+        public static final int common_signin_btn_icon_focus_dark=0x7f020007;
+        public static final int common_signin_btn_icon_focus_light=0x7f020008;
+        public static final int common_signin_btn_icon_light=0x7f020009;
+        public static final int common_signin_btn_icon_normal_dark=0x7f02000a;
+        public static final int common_signin_btn_icon_normal_light=0x7f02000b;
+        public static final int common_signin_btn_icon_pressed_dark=0x7f02000c;
+        public static final int common_signin_btn_icon_pressed_light=0x7f02000d;
+        public static final int common_signin_btn_text_dark=0x7f02000e;
+        public static final int common_signin_btn_text_disabled_dark=0x7f02000f;
+        public static final int common_signin_btn_text_disabled_focus_dark=0x7f020010;
+        public static final int common_signin_btn_text_disabled_focus_light=0x7f020011;
+        public static final int common_signin_btn_text_disabled_light=0x7f020012;
+        public static final int common_signin_btn_text_focus_dark=0x7f020013;
+        public static final int common_signin_btn_text_focus_light=0x7f020014;
+        public static final int common_signin_btn_text_light=0x7f020015;
+        public static final int common_signin_btn_text_normal_dark=0x7f020016;
+        public static final int common_signin_btn_text_normal_light=0x7f020017;
+        public static final int common_signin_btn_text_pressed_dark=0x7f020018;
+        public static final int common_signin_btn_text_pressed_light=0x7f020019;
+        public static final int ic_action_add_person=0x7f02001a;
+        public static final int ic_launcher=0x7f02001b;
+        public static final int ic_plusone_medium_off_client=0x7f02001c;
+        public static final int ic_plusone_small_off_client=0x7f02001d;
+        public static final int ic_plusone_standard_off_client=0x7f02001e;
+        public static final int ic_plusone_tall_off_client=0x7f02001f;
+        public static final int powered_by_google_dark=0x7f020020;
+        public static final int powered_by_google_light=0x7f020021;
     }
     public static final class id {
-        public static final int action_add=0x7f08003f;
-        public static final int action_add_contact=0x7f08003b;
-        public static final int action_delete=0x7f080039;
-        public static final int action_edit=0x7f080038;
-        public static final int action_forgot_password=0x7f08003c;
-        public static final int action_settings=0x7f08003a;
-        public static final int action_user_ads=0x7f08003d;
-        public static final int action_user_profile=0x7f08003e;
-        public static final int btnDelUser=0x7f080025;
-        public static final int btnDelete=0x7f080014;
-        public static final int btnSave=0x7f080015;
-        public static final int btnSaveUser=0x7f080026;
-        public static final int cbAirConditionner=0x7f080003;
-        public static final int cbDriver=0x7f080004;
-        public static final int cbHeater=0x7f080002;
-        public static final int cbxAirConditionner=0x7f080011;
-        public static final int cbxDriver=0x7f080010;
-        public static final int cbxHeater=0x7f080012;
-        public static final int container=0x7f080016;
-        public static final int etDescription=0x7f080013;
-        public static final int etNbPlace=0x7f08000f;
-        public static final int etTitle=0x7f08000e;
-        public static final int idSearchAdsFragment=0x7f080029;
-        public static final int idSearchFragment=0x7f080028;
-        public static final int login=0x7f08000c;
-        public static final int login_form=0x7f080009;
-        public static final int login_status=0x7f080007;
-        public static final int login_status_message=0x7f080008;
-        public static final int lvAd=0x7f08002a;
-        public static final int password=0x7f08000b;
-        public static final int scrollView=0x7f080027;
-        public static final int search_ads_lv=0x7f080035;
-        public static final int search_air_conditionner=0x7f080030;
-        public static final int search_btn_search=0x7f080034;
-        public static final int search_description=0x7f08002b;
-        public static final int search_distance=0x7f08001e;
-        public static final int search_distance_km=0x7f080033;
-        public static final int search_driver=0x7f08002e;
-        public static final int search_heater=0x7f080031;
-        public static final int search_man=0x7f08002c;
-        public static final int search_passenger=0x7f08002f;
-        public static final int search_range=0x7f080032;
-        public static final int search_woman=0x7f08002d;
-        public static final int sign_in_button=0x7f08000d;
-        public static final int textView3=0x7f080005;
-        public static final int tvAdDescription=0x7f080037;
-        public static final int tvAdTitle=0x7f080036;
-        public static final int tvDescription=0x7f080001;
-        public static final int tvNbPlace=0x7f080006;
-        public static final int tvTitle=0x7f080000;
-        public static final int user_age=0x7f08001d;
-        public static final int user_appNb=0x7f080023;
-        public static final int user_city=0x7f080021;
-        public static final int user_email=0x7f08001a;
-        public static final int user_lastname=0x7f080018;
-        public static final int user_man=0x7f08001b;
-        public static final int user_name=0x7f080017;
-        public static final int user_phone=0x7f080019;
-        public static final int user_postalcode=0x7f080022;
-        public static final int user_province=0x7f080024;
-        public static final int user_street_nbr=0x7f08001f;
-        public static final int user_streetname=0x7f080020;
-        public static final int user_username=0x7f08000a;
-        public static final int user_woman=0x7f08001c;
+        public static final int action_add=0x7f060053;
+        public static final int action_add_contact=0x7f06004f;
+        public static final int action_delete=0x7f06004d;
+        public static final int action_edit=0x7f06004c;
+        public static final int action_forgot_password=0x7f060050;
+        public static final int action_settings=0x7f06004e;
+        public static final int action_user_ads=0x7f060051;
+        public static final int action_user_profile=0x7f060052;
+        public static final int book_now=0x7f060010;
+        public static final int btnDelUser=0x7f060039;
+        public static final int btnDelete=0x7f060028;
+        public static final int btnSave=0x7f060029;
+        public static final int btnSaveUser=0x7f06003a;
+        public static final int buyButton=0x7f06000a;
+        public static final int buy_now=0x7f06000f;
+        public static final int buy_with_google=0x7f06000e;
+        public static final int cbAirConditionner=0x7f060017;
+        public static final int cbDriver=0x7f060018;
+        public static final int cbHeater=0x7f060016;
+        public static final int cbxAirConditionner=0x7f060025;
+        public static final int cbxDriver=0x7f060024;
+        public static final int cbxHeater=0x7f060026;
+        public static final int classic=0x7f060011;
+        public static final int container=0x7f06002a;
+        public static final int etDescription=0x7f060027;
+        public static final int etNbPlace=0x7f060023;
+        public static final int etTitle=0x7f060022;
+        public static final int grayscale=0x7f060012;
+        public static final int holo_dark=0x7f060005;
+        public static final int holo_light=0x7f060006;
+        public static final int hybrid=0x7f060004;
+        public static final int idSearchAdsFragment=0x7f06003d;
+        public static final int idSearchFragment=0x7f06003c;
+        public static final int login=0x7f060020;
+        public static final int login_form=0x7f06001d;
+        public static final int login_status=0x7f06001b;
+        public static final int login_status_message=0x7f06001c;
+        public static final int lvAd=0x7f06003e;
+        public static final int match_parent=0x7f06000c;
+        public static final int monochrome=0x7f060013;
+        public static final int none=0x7f060000;
+        public static final int normal=0x7f060001;
+        public static final int password=0x7f06001f;
+        public static final int production=0x7f060007;
+        public static final int sandbox=0x7f060008;
+        public static final int satellite=0x7f060002;
+        public static final int scrollView=0x7f06003b;
+        public static final int search_ads_lv=0x7f060049;
+        public static final int search_air_conditionner=0x7f060044;
+        public static final int search_btn_search=0x7f060048;
+        public static final int search_description=0x7f06003f;
+        public static final int search_distance=0x7f060032;
+        public static final int search_distance_km=0x7f060047;
+        public static final int search_driver=0x7f060042;
+        public static final int search_heater=0x7f060045;
+        public static final int search_man=0x7f060040;
+        public static final int search_passenger=0x7f060043;
+        public static final int search_range=0x7f060046;
+        public static final int search_woman=0x7f060041;
+        public static final int selectionDetails=0x7f06000b;
+        public static final int sign_in_button=0x7f060021;
+        public static final int strict_sandbox=0x7f060009;
+        public static final int terrain=0x7f060003;
+        public static final int textView3=0x7f060019;
+        public static final int tvAdDescription=0x7f06004b;
+        public static final int tvAdTitle=0x7f06004a;
+        public static final int tvDescription=0x7f060015;
+        public static final int tvNbPlace=0x7f06001a;
+        public static final int tvTitle=0x7f060014;
+        public static final int user_age=0x7f060031;
+        public static final int user_appNb=0x7f060037;
+        public static final int user_city=0x7f060035;
+        public static final int user_email=0x7f06002e;
+        public static final int user_lastname=0x7f06002c;
+        public static final int user_man=0x7f06002f;
+        public static final int user_name=0x7f06002b;
+        public static final int user_phone=0x7f06002d;
+        public static final int user_postalcode=0x7f060036;
+        public static final int user_province=0x7f060038;
+        public static final int user_street_nbr=0x7f060033;
+        public static final int user_streetname=0x7f060034;
+        public static final int user_username=0x7f06001e;
+        public static final int user_woman=0x7f060030;
+        public static final int wrap_content=0x7f06000d;
+    }
+    public static final class integer {
+        public static final int google_play_services_version=0x7f080000;
     }
     public static final class layout {
         public static final int activity_ads=0x7f030000;
@@ -98,69 +473,104 @@ public final class R {
         public static final int list_ad=0x7f030009;
     }
     public static final class menu {
-        public static final int action_menu=0x7f070000;
-        public static final int add_ads=0x7f070001;
-        public static final int ads_menu=0x7f070002;
-        public static final int login=0x7f070003;
-        public static final int main=0x7f070004;
-        public static final int manage_user=0x7f070005;
-        public static final int search_ads=0x7f070006;
-        public static final int user=0x7f070007;
-        public static final int user_ads=0x7f070008;
+        public static final int action_menu=0x7f0b0000;
+        public static final int add_ads=0x7f0b0001;
+        public static final int ads_menu=0x7f0b0002;
+        public static final int login=0x7f0b0003;
+        public static final int main=0x7f0b0004;
+        public static final int manage_user=0x7f0b0005;
+        public static final int search_ads=0x7f0b0006;
+        public static final int user=0x7f0b0007;
+        public static final int user_ads=0x7f0b0008;
     }
     public static final class string {
-        public static final int action_add=0x7f050000;
-        public static final int action_ads=0x7f050001;
-        public static final int action_delete=0x7f050002;
-        public static final int action_edit=0x7f050003;
-        public static final int action_forgot_password=0x7f050004;
-        public static final int action_profile=0x7f050005;
-        public static final int action_save=0x7f050006;
-        public static final int action_settings=0x7f050007;
-        public static final int action_sign_in_register=0x7f050008;
-        public static final int action_sign_in_short=0x7f050009;
-        public static final int age=0x7f05000a;
-        public static final int air_conditionner=0x7f05000b;
-        public static final int app_name=0x7f05000c;
-        public static final int app_number=0x7f05000d;
-        public static final int city=0x7f05000e;
-        public static final int delete_user=0x7f05000f;
-        public static final int description=0x7f050010;
-        public static final int driver=0x7f050011;
-        public static final int email=0x7f050012;
-        public static final int error_field_required=0x7f050013;
-        public static final int error_incorrect_password=0x7f050014;
-        public static final int error_invalid_email=0x7f050015;
-        public static final int error_invalid_password=0x7f050016;
-        public static final int heater=0x7f050017;
-        public static final int hello_world=0x7f050018;
-        public static final int lastname=0x7f050019;
-        public static final int login_progress_signing_in=0x7f05001a;
-        public static final int man=0x7f05001b;
-        public static final int name=0x7f05001c;
-        public static final int nb_seats=0x7f05001d;
-        public static final int passenger=0x7f05001e;
-        public static final int phone=0x7f05001f;
-        public static final int postal_code=0x7f050020;
-        public static final int prompt_password=0x7f050021;
-        public static final int prompt_username=0x7f050022;
-        public static final int province=0x7f050023;
-        public static final int range=0x7f050024;
-        public static final int save_user=0x7f050025;
-        public static final int search_search=0x7f050026;
-        public static final int sex=0x7f050027;
-        public static final int street_name=0x7f050028;
-        public static final int street_number=0x7f050029;
-        public static final int title=0x7f05002a;
-        public static final int title_activity_add_ads=0x7f05002b;
-        public static final int title_activity_ads=0x7f05002c;
-        public static final int title_activity_login=0x7f05002d;
-        public static final int title_activity_manage_user=0x7f05002e;
-        public static final int title_activity_search=0x7f05002f;
-        public static final int title_activity_search_ads=0x7f050030;
-        public static final int title_activity_user=0x7f050031;
-        public static final int woman=0x7f050032;
-        public static final int year=0x7f050033;
+        public static final int accept=0x7f090000;
+        public static final int action_add=0x7f090001;
+        public static final int action_ads=0x7f090002;
+        public static final int action_delete=0x7f090003;
+        public static final int action_edit=0x7f090004;
+        public static final int action_forgot_password=0x7f090005;
+        public static final int action_profile=0x7f090006;
+        public static final int action_save=0x7f090007;
+        public static final int action_settings=0x7f090008;
+        public static final int action_sign_in_register=0x7f090009;
+        public static final int action_sign_in_short=0x7f09000a;
+        public static final int age=0x7f09000b;
+        public static final int air_conditionner=0x7f09000c;
+        public static final int app_name=0x7f09000d;
+        public static final int app_number=0x7f09000e;
+        public static final int city=0x7f09000f;
+        public static final int common_android_wear_notification_needs_update_text=0x7f090010;
+        public static final int common_android_wear_update_text=0x7f090011;
+        public static final int common_android_wear_update_title=0x7f090012;
+        public static final int common_google_play_services_enable_button=0x7f090013;
+        public static final int common_google_play_services_enable_text=0x7f090014;
+        public static final int common_google_play_services_enable_title=0x7f090015;
+        public static final int common_google_play_services_error_notification_requested_by_msg=0x7f090016;
+        public static final int common_google_play_services_install_button=0x7f090017;
+        public static final int common_google_play_services_install_text_phone=0x7f090018;
+        public static final int common_google_play_services_install_text_tablet=0x7f090019;
+        public static final int common_google_play_services_install_title=0x7f09001a;
+        public static final int common_google_play_services_invalid_account_text=0x7f09001b;
+        public static final int common_google_play_services_invalid_account_title=0x7f09001c;
+        public static final int common_google_play_services_needs_enabling_title=0x7f09001d;
+        public static final int common_google_play_services_network_error_text=0x7f09001e;
+        public static final int common_google_play_services_network_error_title=0x7f09001f;
+        public static final int common_google_play_services_notification_needs_installation_title=0x7f090020;
+        public static final int common_google_play_services_notification_needs_update_title=0x7f090021;
+        public static final int common_google_play_services_notification_ticker=0x7f090022;
+        public static final int common_google_play_services_unknown_issue=0x7f090023;
+        public static final int common_google_play_services_unsupported_text=0x7f090024;
+        public static final int common_google_play_services_unsupported_title=0x7f090025;
+        public static final int common_google_play_services_update_button=0x7f090026;
+        public static final int common_google_play_services_update_text=0x7f090027;
+        public static final int common_google_play_services_update_title=0x7f090028;
+        public static final int common_open_on_phone=0x7f090029;
+        public static final int common_signin_button_text=0x7f09002a;
+        public static final int common_signin_button_text_long=0x7f09002b;
+        public static final int create_calendar_message=0x7f09002c;
+        public static final int create_calendar_title=0x7f09002d;
+        public static final int decline=0x7f09002e;
+        public static final int delete_user=0x7f09002f;
+        public static final int description=0x7f090030;
+        public static final int driver=0x7f090031;
+        public static final int email=0x7f090032;
+        public static final int error_field_required=0x7f090033;
+        public static final int error_incorrect_password=0x7f090034;
+        public static final int error_invalid_email=0x7f090035;
+        public static final int error_invalid_password=0x7f090036;
+        public static final int heater=0x7f090037;
+        public static final int hello_world=0x7f090038;
+        public static final int lastname=0x7f090039;
+        public static final int login_progress_signing_in=0x7f09003a;
+        public static final int man=0x7f09003b;
+        public static final int name=0x7f09003c;
+        public static final int nb_seats=0x7f09003d;
+        public static final int passenger=0x7f09003e;
+        public static final int phone=0x7f09003f;
+        public static final int postal_code=0x7f090040;
+        public static final int prompt_password=0x7f090041;
+        public static final int prompt_username=0x7f090042;
+        public static final int province=0x7f090043;
+        public static final int range=0x7f090044;
+        public static final int save_user=0x7f090045;
+        public static final int search_search=0x7f090046;
+        public static final int sex=0x7f090047;
+        public static final int store_picture_message=0x7f090048;
+        public static final int store_picture_title=0x7f090049;
+        public static final int street_name=0x7f09004a;
+        public static final int street_number=0x7f09004b;
+        public static final int title=0x7f09004c;
+        public static final int title_activity_add_ads=0x7f09004d;
+        public static final int title_activity_ads=0x7f09004e;
+        public static final int title_activity_login=0x7f09004f;
+        public static final int title_activity_manage_user=0x7f090050;
+        public static final int title_activity_search=0x7f090051;
+        public static final int title_activity_search_ads=0x7f090052;
+        public static final int title_activity_user=0x7f090053;
+        public static final int wallet_buy_button_place_holder=0x7f090054;
+        public static final int woman=0x7f090055;
+        public static final int year=0x7f090056;
     }
     public static final class style {
         /** 
@@ -172,10 +582,608 @@ public final class R {
  API 11 theme customizations can go here. 
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f060000;
+        public static final int AppBaseTheme=0x7f0a0000;
         /**  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f060001;
-        public static final int LoginFormContainer=0x7f060002;
+        public static final int AppTheme=0x7f0a0001;
+        public static final int LoginFormContainer=0x7f0a0002;
+        public static final int Theme_IAPTheme=0x7f0a0003;
+        public static final int WalletFragmentDefaultButtonTextAppearance=0x7f0a0004;
+        public static final int WalletFragmentDefaultDetailsHeaderTextAppearance=0x7f0a0005;
+        public static final int WalletFragmentDefaultDetailsTextAppearance=0x7f0a0006;
+        public static final int WalletFragmentDefaultStyle=0x7f0a0007;
     }
+    public static final class styleable {
+        /** Attributes that can be used with a AdsAttrs.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #AdsAttrs_adSize uqtr.covoituragemobile:adSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #AdsAttrs_adSizes uqtr.covoituragemobile:adSizes}</code></td><td></td></tr>
+           <tr><td><code>{@link #AdsAttrs_adUnitId uqtr.covoituragemobile:adUnitId}</code></td><td></td></tr>
+           </table>
+           @see #AdsAttrs_adSize
+           @see #AdsAttrs_adSizes
+           @see #AdsAttrs_adUnitId
+         */
+        public static final int[] AdsAttrs = {
+            0x7f010000, 0x7f010001, 0x7f010002
+        };
+        /**
+          <p>This symbol is the offset where the {@link uqtr.covoituragemobile.R.attr#adSize}
+          attribute's value can be found in the {@link #AdsAttrs} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name uqtr.covoituragemobile:adSize
+        */
+        public static final int AdsAttrs_adSize = 0;
+        /**
+          <p>This symbol is the offset where the {@link uqtr.covoituragemobile.R.attr#adSizes}
+          attribute's value can be found in the {@link #AdsAttrs} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name uqtr.covoituragemobile:adSizes
+        */
+        public static final int AdsAttrs_adSizes = 1;
+        /**
+          <p>This symbol is the offset where the {@link uqtr.covoituragemobile.R.attr#adUnitId}
+          attribute's value can be found in the {@link #AdsAttrs} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name uqtr.covoituragemobile:adUnitId
+        */
+        public static final int AdsAttrs_adUnitId = 2;
+        /** Attributes that can be used with a MapAttrs.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #MapAttrs_cameraBearing uqtr.covoituragemobile:cameraBearing}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_cameraTargetLat uqtr.covoituragemobile:cameraTargetLat}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_cameraTargetLng uqtr.covoituragemobile:cameraTargetLng}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_cameraTilt uqtr.covoituragemobile:cameraTilt}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_cameraZoom uqtr.covoituragemobile:cameraZoom}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_mapType uqtr.covoituragemobile:mapType}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiCompass uqtr.covoituragemobile:uiCompass}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiRotateGestures uqtr.covoituragemobile:uiRotateGestures}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiScrollGestures uqtr.covoituragemobile:uiScrollGestures}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiTiltGestures uqtr.covoituragemobile:uiTiltGestures}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiZoomControls uqtr.covoituragemobile:uiZoomControls}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiZoomGestures uqtr.covoituragemobile:uiZoomGestures}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_useViewLifecycle uqtr.covoituragemobile:useViewLifecycle}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_zOrderOnTop uqtr.covoituragemobile:zOrderOnTop}</code></td><td></td></tr>
+           </table>
+           @see #MapAttrs_cameraBearing
+           @see #MapAttrs_cameraTargetLat
+           @see #MapAttrs_cameraTargetLng
+           @see #MapAttrs_cameraTilt
+           @see #MapAttrs_cameraZoom
+           @see #MapAttrs_mapType
+           @see #MapAttrs_uiCompass
+           @see #MapAttrs_uiRotateGestures
+           @see #MapAttrs_uiScrollGestures
+           @see #MapAttrs_uiTiltGestures
+           @see #MapAttrs_uiZoomControls
+           @see #MapAttrs_uiZoomGestures
+           @see #MapAttrs_useViewLifecycle
+           @see #MapAttrs_zOrderOnTop
+         */
+        public static final int[] MapAttrs = {
+            0x7f010003, 0x7f010004, 0x7f010005, 0x7f010006,
+            0x7f010007, 0x7f010008, 0x7f010009, 0x7f01000a,
+            0x7f01000b, 0x7f01000c, 0x7f01000d, 0x7f01000e,
+            0x7f01000f, 0x7f010010
+        };
+        /**
+          <p>This symbol is the offset where the {@link uqtr.covoituragemobile.R.attr#cameraBearing}
+          attribute's value can be found in the {@link #MapAttrs} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name uqtr.covoituragemobile:cameraBearing
+        */
+        public static final int MapAttrs_cameraBearing = 1;
+        /**
+          <p>This symbol is the offset where the {@link uqtr.covoituragemobile.R.attr#cameraTargetLat}
+          attribute's value can be found in the {@link #MapAttrs} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name uqtr.covoituragemobile:cameraTargetLat
+        */
+        public static final int MapAttrs_cameraTargetLat = 2;
+        /**
+          <p>This symbol is the offset where the {@link uqtr.covoituragemobile.R.attr#cameraTargetLng}
+          attribute's value can be found in the {@link #MapAttrs} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name uqtr.covoituragemobile:cameraTargetLng
+        */
+        public static final int MapAttrs_cameraTargetLng = 3;
+        /**
+          <p>This symbol is the offset where the {@link uqtr.covoituragemobile.R.attr#cameraTilt}
+          attribute's value can be found in the {@link #MapAttrs} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name uqtr.covoituragemobile:cameraTilt
+        */
+        public static final int MapAttrs_cameraTilt = 4;
+        /**
+          <p>This symbol is the offset where the {@link uqtr.covoituragemobile.R.attr#cameraZoom}
+          attribute's value can be found in the {@link #MapAttrs} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name uqtr.covoituragemobile:cameraZoom
+        */
+        public static final int MapAttrs_cameraZoom = 5;
+        /**
+          <p>This symbol is the offset where the {@link uqtr.covoituragemobile.R.attr#mapType}
+          attribute's value can be found in the {@link #MapAttrs} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>none</code></td><td>0</td><td></td></tr>
+<tr><td><code>normal</code></td><td>1</td><td></td></tr>
+<tr><td><code>satellite</code></td><td>2</td><td></td></tr>
+<tr><td><code>terrain</code></td><td>3</td><td></td></tr>
+<tr><td><code>hybrid</code></td><td>4</td><td></td></tr>
+</table>
+          @attr name uqtr.covoituragemobile:mapType
+        */
+        public static final int MapAttrs_mapType = 0;
+        /**
+          <p>This symbol is the offset where the {@link uqtr.covoituragemobile.R.attr#uiCompass}
+          attribute's value can be found in the {@link #MapAttrs} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name uqtr.covoituragemobile:uiCompass
+        */
+        public static final int MapAttrs_uiCompass = 6;
+        /**
+          <p>This symbol is the offset where the {@link uqtr.covoituragemobile.R.attr#uiRotateGestures}
+          attribute's value can be found in the {@link #MapAttrs} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name uqtr.covoituragemobile:uiRotateGestures
+        */
+        public static final int MapAttrs_uiRotateGestures = 7;
+        /**
+          <p>This symbol is the offset where the {@link uqtr.covoituragemobile.R.attr#uiScrollGestures}
+          attribute's value can be found in the {@link #MapAttrs} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name uqtr.covoituragemobile:uiScrollGestures
+        */
+        public static final int MapAttrs_uiScrollGestures = 8;
+        /**
+          <p>This symbol is the offset where the {@link uqtr.covoituragemobile.R.attr#uiTiltGestures}
+          attribute's value can be found in the {@link #MapAttrs} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name uqtr.covoituragemobile:uiTiltGestures
+        */
+        public static final int MapAttrs_uiTiltGestures = 9;
+        /**
+          <p>This symbol is the offset where the {@link uqtr.covoituragemobile.R.attr#uiZoomControls}
+          attribute's value can be found in the {@link #MapAttrs} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name uqtr.covoituragemobile:uiZoomControls
+        */
+        public static final int MapAttrs_uiZoomControls = 10;
+        /**
+          <p>This symbol is the offset where the {@link uqtr.covoituragemobile.R.attr#uiZoomGestures}
+          attribute's value can be found in the {@link #MapAttrs} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name uqtr.covoituragemobile:uiZoomGestures
+        */
+        public static final int MapAttrs_uiZoomGestures = 11;
+        /**
+          <p>This symbol is the offset where the {@link uqtr.covoituragemobile.R.attr#useViewLifecycle}
+          attribute's value can be found in the {@link #MapAttrs} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name uqtr.covoituragemobile:useViewLifecycle
+        */
+        public static final int MapAttrs_useViewLifecycle = 12;
+        /**
+          <p>This symbol is the offset where the {@link uqtr.covoituragemobile.R.attr#zOrderOnTop}
+          attribute's value can be found in the {@link #MapAttrs} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name uqtr.covoituragemobile:zOrderOnTop
+        */
+        public static final int MapAttrs_zOrderOnTop = 13;
+        /** Attributes that can be used with a WalletFragmentOptions.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #WalletFragmentOptions_appTheme uqtr.covoituragemobile:appTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentOptions_environment uqtr.covoituragemobile:environment}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentOptions_fragmentMode uqtr.covoituragemobile:fragmentMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentOptions_fragmentStyle uqtr.covoituragemobile:fragmentStyle}</code></td><td></td></tr>
+           </table>
+           @see #WalletFragmentOptions_appTheme
+           @see #WalletFragmentOptions_environment
+           @see #WalletFragmentOptions_fragmentMode
+           @see #WalletFragmentOptions_fragmentStyle
+         */
+        public static final int[] WalletFragmentOptions = {
+            0x7f010011, 0x7f010012, 0x7f010013, 0x7f010014
+        };
+        /**
+          <p>This symbol is the offset where the {@link uqtr.covoituragemobile.R.attr#appTheme}
+          attribute's value can be found in the {@link #WalletFragmentOptions} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>holo_dark</code></td><td>0</td><td></td></tr>
+<tr><td><code>holo_light</code></td><td>1</td><td></td></tr>
+</table>
+          @attr name uqtr.covoituragemobile:appTheme
+        */
+        public static final int WalletFragmentOptions_appTheme = 0;
+        /**
+          <p>This symbol is the offset where the {@link uqtr.covoituragemobile.R.attr#environment}
+          attribute's value can be found in the {@link #WalletFragmentOptions} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>production</code></td><td>1</td><td></td></tr>
+<tr><td><code>sandbox</code></td><td>0</td><td></td></tr>
+<tr><td><code>strict_sandbox</code></td><td>2</td><td></td></tr>
+</table>
+          @attr name uqtr.covoituragemobile:environment
+        */
+        public static final int WalletFragmentOptions_environment = 1;
+        /**
+          <p>This symbol is the offset where the {@link uqtr.covoituragemobile.R.attr#fragmentMode}
+          attribute's value can be found in the {@link #WalletFragmentOptions} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>buyButton</code></td><td>1</td><td></td></tr>
+<tr><td><code>selectionDetails</code></td><td>2</td><td></td></tr>
+</table>
+          @attr name uqtr.covoituragemobile:fragmentMode
+        */
+        public static final int WalletFragmentOptions_fragmentMode = 3;
+        /**
+          <p>This symbol is the offset where the {@link uqtr.covoituragemobile.R.attr#fragmentStyle}
+          attribute's value can be found in the {@link #WalletFragmentOptions} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name uqtr.covoituragemobile:fragmentStyle
+        */
+        public static final int WalletFragmentOptions_fragmentStyle = 2;
+        /** Attributes that can be used with a WalletFragmentStyle.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_buyButtonAppearance uqtr.covoituragemobile:buyButtonAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_buyButtonHeight uqtr.covoituragemobile:buyButtonHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_buyButtonText uqtr.covoituragemobile:buyButtonText}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_buyButtonWidth uqtr.covoituragemobile:buyButtonWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsBackground uqtr.covoituragemobile:maskedWalletDetailsBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsButtonBackground uqtr.covoituragemobile:maskedWalletDetailsButtonBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsButtonTextAppearance uqtr.covoituragemobile:maskedWalletDetailsButtonTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsHeaderTextAppearance uqtr.covoituragemobile:maskedWalletDetailsHeaderTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsLogoImageType uqtr.covoituragemobile:maskedWalletDetailsLogoImageType}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsLogoTextColor uqtr.covoituragemobile:maskedWalletDetailsLogoTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsTextAppearance uqtr.covoituragemobile:maskedWalletDetailsTextAppearance}</code></td><td></td></tr>
+           </table>
+           @see #WalletFragmentStyle_buyButtonAppearance
+           @see #WalletFragmentStyle_buyButtonHeight
+           @see #WalletFragmentStyle_buyButtonText
+           @see #WalletFragmentStyle_buyButtonWidth
+           @see #WalletFragmentStyle_maskedWalletDetailsBackground
+           @see #WalletFragmentStyle_maskedWalletDetailsButtonBackground
+           @see #WalletFragmentStyle_maskedWalletDetailsButtonTextAppearance
+           @see #WalletFragmentStyle_maskedWalletDetailsHeaderTextAppearance
+           @see #WalletFragmentStyle_maskedWalletDetailsLogoImageType
+           @see #WalletFragmentStyle_maskedWalletDetailsLogoTextColor
+           @see #WalletFragmentStyle_maskedWalletDetailsTextAppearance
+         */
+        public static final int[] WalletFragmentStyle = {
+            0x7f010015, 0x7f010016, 0x7f010017, 0x7f010018,
+            0x7f010019, 0x7f01001a, 0x7f01001b, 0x7f01001c,
+            0x7f01001d, 0x7f01001e, 0x7f01001f
+        };
+        /**
+          <p>This symbol is the offset where the {@link uqtr.covoituragemobile.R.attr#buyButtonAppearance}
+          attribute's value can be found in the {@link #WalletFragmentStyle} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>classic</code></td><td>1</td><td></td></tr>
+<tr><td><code>grayscale</code></td><td>2</td><td></td></tr>
+<tr><td><code>monochrome</code></td><td>3</td><td></td></tr>
+</table>
+          @attr name uqtr.covoituragemobile:buyButtonAppearance
+        */
+        public static final int WalletFragmentStyle_buyButtonAppearance = 3;
+        /**
+          <p>This symbol is the offset where the {@link uqtr.covoituragemobile.R.attr#buyButtonHeight}
+          attribute's value can be found in the {@link #WalletFragmentStyle} array.
+
+
+          <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+<p>May be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>match_parent</code></td><td>-1</td><td></td></tr>
+<tr><td><code>wrap_content</code></td><td>-2</td><td></td></tr>
+</table>
+          @attr name uqtr.covoituragemobile:buyButtonHeight
+        */
+        public static final int WalletFragmentStyle_buyButtonHeight = 0;
+        /**
+          <p>This symbol is the offset where the {@link uqtr.covoituragemobile.R.attr#buyButtonText}
+          attribute's value can be found in the {@link #WalletFragmentStyle} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>buy_with_google</code></td><td>1</td><td></td></tr>
+<tr><td><code>buy_now</code></td><td>2</td><td></td></tr>
+<tr><td><code>book_now</code></td><td>3</td><td></td></tr>
+</table>
+          @attr name uqtr.covoituragemobile:buyButtonText
+        */
+        public static final int WalletFragmentStyle_buyButtonText = 2;
+        /**
+          <p>This symbol is the offset where the {@link uqtr.covoituragemobile.R.attr#buyButtonWidth}
+          attribute's value can be found in the {@link #WalletFragmentStyle} array.
+
+
+          <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+<p>May be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>match_parent</code></td><td>-1</td><td></td></tr>
+<tr><td><code>wrap_content</code></td><td>-2</td><td></td></tr>
+</table>
+          @attr name uqtr.covoituragemobile:buyButtonWidth
+        */
+        public static final int WalletFragmentStyle_buyButtonWidth = 1;
+        /**
+          <p>This symbol is the offset where the {@link uqtr.covoituragemobile.R.attr#maskedWalletDetailsBackground}
+          attribute's value can be found in the {@link #WalletFragmentStyle} array.
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+          @attr name uqtr.covoituragemobile:maskedWalletDetailsBackground
+        */
+        public static final int WalletFragmentStyle_maskedWalletDetailsBackground = 6;
+        /**
+          <p>This symbol is the offset where the {@link uqtr.covoituragemobile.R.attr#maskedWalletDetailsButtonBackground}
+          attribute's value can be found in the {@link #WalletFragmentStyle} array.
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+          @attr name uqtr.covoituragemobile:maskedWalletDetailsButtonBackground
+        */
+        public static final int WalletFragmentStyle_maskedWalletDetailsButtonBackground = 8;
+        /**
+          <p>This symbol is the offset where the {@link uqtr.covoituragemobile.R.attr#maskedWalletDetailsButtonTextAppearance}
+          attribute's value can be found in the {@link #WalletFragmentStyle} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name uqtr.covoituragemobile:maskedWalletDetailsButtonTextAppearance
+        */
+        public static final int WalletFragmentStyle_maskedWalletDetailsButtonTextAppearance = 7;
+        /**
+          <p>This symbol is the offset where the {@link uqtr.covoituragemobile.R.attr#maskedWalletDetailsHeaderTextAppearance}
+          attribute's value can be found in the {@link #WalletFragmentStyle} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name uqtr.covoituragemobile:maskedWalletDetailsHeaderTextAppearance
+        */
+        public static final int WalletFragmentStyle_maskedWalletDetailsHeaderTextAppearance = 5;
+        /**
+          <p>This symbol is the offset where the {@link uqtr.covoituragemobile.R.attr#maskedWalletDetailsLogoImageType}
+          attribute's value can be found in the {@link #WalletFragmentStyle} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>classic</code></td><td>1</td><td></td></tr>
+<tr><td><code>monochrome</code></td><td>2</td><td></td></tr>
+</table>
+          @attr name uqtr.covoituragemobile:maskedWalletDetailsLogoImageType
+        */
+        public static final int WalletFragmentStyle_maskedWalletDetailsLogoImageType = 10;
+        /**
+          <p>This symbol is the offset where the {@link uqtr.covoituragemobile.R.attr#maskedWalletDetailsLogoTextColor}
+          attribute's value can be found in the {@link #WalletFragmentStyle} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name uqtr.covoituragemobile:maskedWalletDetailsLogoTextColor
+        */
+        public static final int WalletFragmentStyle_maskedWalletDetailsLogoTextColor = 9;
+        /**
+          <p>This symbol is the offset where the {@link uqtr.covoituragemobile.R.attr#maskedWalletDetailsTextAppearance}
+          attribute's value can be found in the {@link #WalletFragmentStyle} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name uqtr.covoituragemobile:maskedWalletDetailsTextAppearance
+        */
+        public static final int WalletFragmentStyle_maskedWalletDetailsTextAppearance = 4;
+    };
 }

@@ -29,11 +29,14 @@ public class UserAds extends Activity {
 	private User userTest;
 	private ArrayList<Ad> listAds;
 	private ArrayAdapter<Ad> arrayAdapter;
+    private Ad ad;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_user_ads);
+
+        this.overridePendingTransition(R.anim.user_ads_slide_in, R.anim.manage_ads_slide_out);
 		
 		listAds = new ArrayList<Ad>();
 		arrayAdapter = new AdsListAdapter(this, R.layout.list_ad, listAds);
@@ -53,6 +56,8 @@ public class UserAds extends Activity {
 		Address addressTest = new Address(282, "rue Boulard", null, "Trois-Rivières", "Québec", "G8T9G9", add.getLatitude(), add.getLongitude());
 		
 		userTest = new User(1, "lamer", "gabriel", "glamer", "glamer", addressTest, "450-808-8877", "gabriel.lamer@hotmail.ca", 'M', 21);
+
+        ad = new Ad(1, userTest, true, "annonce 1", "description 1", 2, true, true);
 		
 		listView = (ListView) findViewById(R.id.lvAd);
 		listView.setAdapter(arrayAdapter);
@@ -114,8 +119,10 @@ public class UserAds extends Activity {
 		);
 		
 		arrayAdapter.clear();
+
+        arrayAdapter.add(ad);
 		
-		while(cursor.moveToNext()) {
+		/*while(cursor.moveToNext()) {
 			int id = cursor.getInt(cursor.getColumnIndex(AdEntry.F_ID_AD));
 			boolean driver = cursor.getInt(cursor.getColumnIndex(AdEntry.F_DRIVER)) == 1;
 			String title = cursor.getString(cursor.getColumnIndex(AdEntry.F_TITLE));
@@ -126,7 +133,7 @@ public class UserAds extends Activity {
 			
 			Ad ad = new Ad(id, userTest, driver, title, description, nbPlace, airConditionner, heater);
 			arrayAdapter.add(ad);
-		}
+		}*/
 	}
 
 	@Override
@@ -218,7 +225,4 @@ public class UserAds extends Activity {
 		sendIntent.putExtra("adHeater", ""+ ad.isHeater());
 		startActivity(sendIntent);
 	}
-	
-	
-
 }

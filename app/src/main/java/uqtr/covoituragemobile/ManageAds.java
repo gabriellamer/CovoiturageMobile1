@@ -34,6 +34,8 @@ public class ManageAds extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_manage_ads);
+
+        this.overridePendingTransition(R.anim.manage_ads_slide_in, R.anim.user_ads_slide_out);
 		
 		if(getIntent().hasExtra("adId")) {
 			EditText title = (EditText) findViewById(R.id.etTitle);
@@ -75,7 +77,7 @@ public class ManageAds extends Activity {
 		});
 	}
 
-	@Override
+    @Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 	    switch (item.getItemId()) {
 	        case R.id.action_user_ads:
@@ -96,8 +98,6 @@ public class ManageAds extends Activity {
 		getMenuInflater().inflate(R.menu.main, menu);
 		return true;
 	}
-	
-	
 	
 	private void createAd(String userId) {
 		EditText title = (EditText) findViewById(R.id.etTitle);

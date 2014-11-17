@@ -22,9 +22,11 @@ import model.Session;
 import model.User;
 
 import android.app.Activity;
-import android.app.AlertDialog;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
 import android.content.res.Configuration;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
@@ -39,16 +41,45 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.SeekBar;
 import android.widget.TextView;
-import android.widget.Toast;
+
+import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.GooglePlayServicesUtil;
+import com.google.android.gms.gcm.GoogleCloudMessaging;
 
 public class Search extends Activity {
+    private static final String TAG = "GCM";
+    public static final String EXTRA_MESSAGE = "message";
+    public static final String PROPERTY_REG_ID = "registration_id";
+    private static final String PROPERTY_APP_VERSION = "appVersion";
+    private final static int PLAY_SERVICES_RESOLUTION_REQUEST = 9000;
+
 	private Context searchContext = this;
+    String SENDER_ID = "521173413219";
+    Activity mActivity = null;
 	static ArrayList<Ad> listAds = new ArrayList<Ad>();
+    GoogleCloudMessaging gcm;
+    String regid;
+    private storeRegistrationTask mAuthTask = null;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_search);
+
+        if (checkPlayServices())
+        {
+            gcm = GoogleCloudMessaging.getInstance(this);
+            regid = getRegistrationId(searchContext);
+
+            if (regid.isEmpty())
+            {
+                registerInBackground();
+            }
+        }
+        else
+        {
+            Log.i(TAG, "No valid Google Play Services APK found.");
+        }
 		
 		final Button btnDelete = (Button) findViewById(R.id.search_btn_search);
 		btnDelete.setOnClickListener(new View.OnClickListener() {
@@ -100,6 +131,22 @@ public class Search extends Activity {
         Ad ad = new Ad(1, userTest, true, "annonce 1", "description 1", 2, true, true);
 
         listAds.add(ad);
+
+        Address addressTest1 = new Address(300, "rue Boulard", null, "Trois-Rivières", "Québec", "G8T9G9", 46.368892, -72.523911);
+
+        User userTest1 = new User(2, "hould", "vincent", "glamer", "glamer", addressTest, "450-808-8877", "gabriel.lamer@hotmail.ca", 'M', 22);
+
+        Ad ad1 = new Ad(2, userTest1, true, "annonce 2", "description 2", 2, false, true);
+
+        listAds.add(ad1);
+
+        Address addressTest2 = new Address(300, "rue Boulard", null, "Trois-Rivières", "Québec", "G8T9G9", 46.368892, -72.523911);
+
+        User userTest2 = new User(3, "toure", "fadel", "glamer", "glamer", addressTest, "450-808-8877", "gabriel.lamer@hotmail.ca", 'M', 22);
+
+        Ad ad2 = new Ad(3, userTest2, true, "annonce 3", "description 3", 2, false, true);
+
+        listAds.add(ad2);
 
         if (getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE)
         {
@@ -300,5 +347,146 @@ public class Search extends Activity {
  
         inputStream.close();
         return result;
+    }
+
+    public String getRegistrationId(Context context) {
+        final SharedPreferences prefs = context.getSharedPreferences("DealsGeo_GCM", Context.MODE_PRIVATE);
+        String registrationId = prefs.getString(PROPERTY_REG_ID, PROPERTY_REG_ID);
+        if (registrationId.isEmpty()) {
+            Log.i(TAG, "Registration not found.");
+            return "";
+        }
+        int registeredVersion = prefs.getInt(PROPERTY_APP_VERSION, Integer.MIN_VALUE);
+        int currentVersion = getAppVersion(context);
+        if (registeredVersion != currentVersion) {
+            Log.i(TAG, "App version changed.");
+            return "";
+        }
+        return registrationId;
+    }
+
+    private static int getAppVersion(Context context) {
+        try {
+            PackageInfo packageInfo = context.getPackageManager().getPackageInfo(context.getPackageName(), 0);
+            return packageInfo.versionCode;
+        } catch (PackageManager.NameNotFoundException e) {
+            throw new RuntimeException("Could not get package name: " + e);
+        }
+    }
+
+    public boolean checkPlayServices() {
+        int resultCode = GooglePlayServicesUtil.isGooglePlayServicesAvailable(searchContext);
+        if (resultCode != ConnectionResult.SUCCESS) {
+            if (GooglePlayServicesUtil.isUserRecoverableError(resultCode)) {
+                GooglePlayServicesUtil.getErrorDialog(resultCode, mActivity, PLAY_SERVICES_RESOLUTION_REQUEST).show();
+            } else {
+                Log.i(TAG, "This device is not supported.");
+                return false;
+            }
+            return false;
+        }
+        return true;
+    }
+
+    public void registerInBackground() {
+        new AsyncTask<Void, Void, String>() {
+            @Override
+            protected String doInBackground(Void... arg0) {
+                String msg = "";
+                try {
+                    if (gcm == null) {
+                        gcm = GoogleCloudMessaging.getInstance(searchContext);
+                    }
+                    Log.i(TAG,"Registering "+SENDER_ID);
+                    regid = gcm.register(SENDER_ID);
+                    storeRegistrationId(searchContext, regid);
+                } catch (IOException ex) {
+                    Log.i(TAG,"Error: "+ex.getMessage());
+                }
+                return msg;
+            }
+        }.execute(null, null, null);
+    }
+
+    private void storeRegistrationId(Context context, String regId) {
+        final SharedPreferences prefs = context.getSharedPreferences("DealsGeo_GCM", Context.MODE_PRIVATE);
+        int appVersion = getAppVersion(searchContext);
+        Log.i(TAG, "Saving regId on app version " + appVersion);
+        SharedPreferences.Editor editor = prefs.edit();
+        editor.putString(PROPERTY_REG_ID, regId);
+        editor.putInt(PROPERTY_APP_VERSION, appVersion);
+        editor.commit();
+
+        mAuthTask = new storeRegistrationTask();
+        mAuthTask.execute((Void) null);
+    }
+
+    public class storeRegistrationTask extends AsyncTask<Void, Void, Boolean> {
+        private static final String URL = "http://192.168.0.101:8888/storeRegistrationId.php";
+
+        @Override
+        protected Boolean doInBackground(Void... params) {
+            try
+            {
+                ConnectivityManager connMgr = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+                NetworkInfo networkInfo = connMgr.getActiveNetworkInfo();
+
+                if(networkInfo != null && networkInfo.isConnected())
+                {
+                    InputStream inputStream = null;
+                    String result = "";
+
+                    try
+                    {
+                        HttpClient httpclient = new DefaultHttpClient();
+                        HttpPost httpPost = new HttpPost(URL);
+
+                        String json = "";
+                        JSONObject jsonObject = new JSONObject();
+
+                        jsonObject.put("id", regid);
+
+                        json = jsonObject.toString();
+                        StringEntity se = new StringEntity(json);
+                        httpPost.setEntity(se);
+                        httpPost.setHeader("Accept", "application/json");
+                        httpPost.setHeader("Content-type", "application/json");
+
+                        HttpResponse httpResponse = httpclient.execute(httpPost);
+
+                        inputStream = httpResponse.getEntity().getContent();
+                        if(inputStream != null)
+                        {
+                            result = convertInputStreamToString(inputStream);
+
+                            Log.d("InputStream", result);
+
+                            try
+                            {
+                                JSONObject o = new JSONObject(result);
+
+                                if(o.getInt("success") == 0) {
+                                    return false;
+                                }
+                            }
+                            catch(JSONException e) {
+                                e.printStackTrace();
+                            }
+                        }
+                        else
+                            return false;
+
+                    } catch (Exception e) {
+                        Log.d("InputStream", e.getLocalizedMessage());
+                    }
+                }
+
+                Thread.sleep(2000);
+            } catch (InterruptedException e) {
+                return false;
+            }
+
+            return true;
+        }
     }
 }
